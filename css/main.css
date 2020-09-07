@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+
+variables {
+  --black: #000000ff;
+  --rich-black-fogra-29: #020f18ff;
+  --oxford-blue: #031d30ff;
+  --indigo-dye: #063b60ff;
+  --lapis-lazuli: #095b95ff;
+  --star-command-blue: #0b78c1ff;
+  --carolina-blue: #2e9feaff;
+  --maya-blue: #74bff1ff;
+  --uranian-blue: #b9e0f8ff;
+  --white: #ffffffff;
+
+  --gray-most-light: #dfdfdf;
+  --gray-lighter: #cacaca;
+  --gray-light: #b8b8b8;
+  --gray-medium: #7a7a7a;
+  --gray-dark: #3d3d3d;
+  --gray-most-dark: #1f1f1f;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: #f2f7fa;
+  font-size: 16px;
+}
+
+/* Header */
+
+/* Nav-contact */
+.nav-contact {
+  background-color: #7a7a7a;
+  color: #b8b8b8;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.nav-contact .contact {
+  text-align: end;
+}
+
+.nav-contact a {
+  color: #dfdfdf;
+  transition: 150ms ease;
+  will-change: color;
+  margin: 0 0.3rem;
+}
+
+.nav-contact a:hover {
+  color: #cacaca;
+  text-decoration: none;
+}
+
+.nav-contact li {
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-contact ul {
+  padding: 0;
+  margin: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #fff;
+  color: #020f18ff;
+  font-size: 1.2rem;
+}
+
+.navbar a {
+  padding: 0;
+}
+
+.navbar button {
+  color: #020f18ff;
+}
+
+.navbar .logo {
+  height: 2.5rem;
+}
+
+#navbar ul li a {
+  display: flex;
+  text-align: flex-end;
+}
