@@ -28,6 +28,10 @@ body {
 
 /* Header */
 
+header {
+  height: 120px;
+}
+
 /* Nav-contact */
 .nav-contact {
   background-color: #7a7a7a;
@@ -66,6 +70,10 @@ body {
 }
 
 /* Navbar */
+header nav {
+  height: calc(100% - 48px);
+  /* z-index: 9000; */
+}
 .navbar {
   background-color: #fff;
   color: #020f18ff;
@@ -87,4 +95,16 @@ body {
 #navbar ul li a {
   display: flex;
   text-align: flex-end;
+}
+
+/* Slider */
+.splide,
+.slider,
+.splide__track,
+.splide__list,
+.splide__slide,
+.splide__slide img {
+  max-height: calc(100vh - 120px);
+  height: auto;
+  z-index: -1;
 }
