@@ -38,6 +38,21 @@ body {
   border-top: 1px solid gray;
 }
 
+.horizontal-list li {
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
+
+.horizontal-list li {
+  margin: 0 0.7rem;
+  font-size: 0.7rem;
+}
+
+.horizontal-list li:first-of-type {
+  margin: 0;
+}
+
 .hundred {
   height: 100%;
 }
@@ -322,17 +337,6 @@ footer a:hover {
   color: #095b95ff;
 }
 
-.horizontal-list li {
-  display: inline;
-  padding: 0;
-  margin: 0;
-}
-
-.horizontal-list li {
-  margin: 0 0.7rem;
-  font-size: 0.7rem;
-}
-
-.horizontal-list li:first-of-type {
-  margin: 0;
+footer h6 {
+  padding: 0.2rem 0 2rem 0;
 }
