@@ -221,7 +221,7 @@ header nav {
 }
 
 .navbar .logo {
-  height: 2.5rem;
+  height: 3.5rem;
 }
 
 #navbar ul li a {
@@ -303,9 +303,9 @@ footer h4 {
   color: white;
 }
 
-footer div {
-  /* border: 1px red solid; */
-}
+/* footer div {
+  border: 1px red solid;
+} */
 
 footer ul {
   list-style: none;
@@ -339,4 +339,43 @@ footer a:hover {
 
 footer h6 {
   padding: 0.2rem 0 2rem 0;
+}
+
+/*? Box links */
+
+.box-links {
+  min-height: 7rem;
+  min-width: 100%;
+  padding: 1rem 0;
+  background-color: #0b78c1ff;
+  display: flex;
+}
+
+.box-links .container {
+  display: flex;
+}
+
+.box-links .row {
+  width: 100%;
+}
+
+.box-links .col-md-3 {
+  display: flex;
+  text-align: center;
+}
+
+.box-links a {
+  font-size: 1.3rem;
+  color: white;
+  font-weight: 400;
+  border-radius: 0px;
+  padding: 0.5rem 0.9rem;
+  transition: ease 300ms;
+  border-bottom: solid 1px #3d3d3d;
+}
+
+.box-links a:hover {
+  background-color: #2e9feaff;
+  color: white;
+  text-decoration: none;
 }
