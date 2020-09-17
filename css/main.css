@@ -25,7 +25,7 @@ variables {
 /*? Root */
 body {
   font-family: 'Kumbh Sans', sans-serif;
-  background-color: #f2f7fa;
+  background-color: #f9fafb;
   font-size: 16px;
 }
 
@@ -36,6 +36,13 @@ body {
   height: 1px;
   width: 100%;
   border-top: 1px solid gray;
+}
+
+.d-flex {
+  display: -ms-flexbox !important;
+  display: flex !important;
+  height: 100%;
+  width: 100%;
 }
 
 .horizontal-list li {
@@ -378,4 +385,63 @@ footer h6 {
   background-color: #2e9feaff;
   color: white;
   text-decoration: none;
+}
+
+/*? Hero */
+.hero {
+  max-height: 500px;
+  margin-top: 2rem;
+}
+
+.hero .text-container {
+  display: flex;
+  flex-direction: column;
+  height: 100% !important;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+}
+
+.hero img {
+  max-height: auto;
+}
+
+/*? Integrations */
+.integrations {
+  margin-top: 2rem;
+  padding: 2rem 0;
+  background-color: #f9fafb;
+}
+
+.integrations .card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  transition: ease 300ms;
+  border: none;
+  border-radius: 0;
+}
+
+.integrations .card:hover {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.integrations .btn {
+  color: black;
+}
+
+.integrations .soft-link-secondary:hover {
+  color: white;
+}
+
+.integrations img {
+  max-width: 75%;
 }
