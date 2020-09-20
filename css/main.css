@@ -145,6 +145,11 @@ body {
   outline: none;
 }
 
+.avatar {
+  max-width: 50px !important;
+  border-radius: 50%;
+}
+
 /*? Effects */
 /* Effect 1: Brackets */
 .nav-link,
@@ -473,7 +478,9 @@ footer h6 {
   background-color: #f9fafb;
 }
 
-.integrations .card {
+/*? Cards */
+.integrations .card,
+.clients .card {
   position: relative;
   display: -ms-flexbox;
   display: flex;
@@ -489,21 +496,25 @@ footer h6 {
   border-radius: 0;
 }
 
-.integrations .card:hover {
+.integrations .card:hover,
+.clients .card:hover {
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
-.integrations .btn {
+.integrations .btn,
+.clients .btn {
   color: black;
 }
 
-.integrations .soft-link-secondary:hover {
+.integrations .soft-link-secondary:hover,
+.clients .soft-link-secondary:hover {
   color: white;
 }
 
-.integrations img {
+.integrations img,
+.clients img {
   max-width: 75%;
 }
 
@@ -571,9 +582,38 @@ footer h6 {
   justify-content: flex-end;
 }
 
+/*? separator */
+.separator-section h3 {
+  color: white;
+  height: fit-content;
+}
+
+.separator-section .row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: end;
+}
+
 /*? Clients */
 .clients {
   min-height: 500px;
+  background-image: url('../assets/images/clients.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients .card-footer {
+  background-color: transparent;
+}
+
+.clients .card {
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 @media (min-width: 768px) {
