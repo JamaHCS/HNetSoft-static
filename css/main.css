@@ -549,6 +549,7 @@ footer h6 {
 .contact-us img {
   object-fit: cover;
   /* margin-top: -200px; */
+  filter: brightness(0.7);
 }
 
 .contact-us .form-contact {
@@ -606,6 +607,7 @@ footer h6 {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* filter: brightness(0.5); */
 }
 
 .clients .card-footer {
