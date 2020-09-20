@@ -85,6 +85,66 @@ body {
   text-decoration: none;
 }
 
+.soft-link {
+  border: 3px solid #0b78c1ff;
+  color: black;
+  font-weight: 400;
+  /* text-decoration: underline; */
+  border-radius: 0px;
+  padding: 0.35rem 0.9rem;
+  transition: ease 300ms;
+}
+
+.soft-link:active {
+  background-color: rgb(74, 99, 117);
+}
+
+.soft-link:hover,
+.soft-link:focus,
+.soft-link:active {
+  /* background-color: #9c4900; */
+  color: white;
+  text-decoration: none;
+
+  text-decoration: none;
+  border: 3px solid #0b78c1ff !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  outline: none;
+}
+
+.input-contact {
+  display: block;
+  width: fit-content !important;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: black;
+  background-color: transparent;
+  border: 3px solid #0b78c1ff;
+  font-family: inherit;
+  transition: 0.15s ease-in-out;
+  box-shadow: none;
+  position: relative;
+}
+
+.input-contact::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: underline;
+}
+
+.input-contact:focus,
+.input-contact:active {
+  background-color: rgb(143, 160, 172);
+  color: white;
+  text-decoration: none;
+  border: 3px solid #0b78c1ff !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  outline: none;
+}
+
 /*? Effects */
 /* Effect 1: Brackets */
 .nav-link,
@@ -445,4 +505,98 @@ footer h6 {
 
 .integrations img {
   max-width: 75%;
+}
+
+/*? Contact us */
+.contact-us {
+  position: relative;
+  min-width: 100%;
+  max-height: 400px;
+  height: 400px;
+}
+
+.contact-us .container-parallax,
+.contact-us .form-contact {
+  position: absolute;
+  min-width: 100%;
+  max-height: 400px;
+  height: 400px;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.contact-us .container-parallax {
+  /* background-image: url('../assets/images/contact.jpg'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 70%;
+  overflow: hidden;
+  /* object-fit: cover; */
+}
+
+.contact-us img {
+  object-fit: cover;
+  /* margin-top: -200px; */
+}
+
+.contact-us .form-contact {
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.contact-us input,
+.contact-us button {
+  background-color: rgba(8, 61, 99, 0.5);
+  color: white;
+}
+
+.contact-us .col-6 {
+  display: flex;
+}
+
+.contact-us .col-6 .row {
+  margin-left: auto;
+}
+
+.contact-us p {
+  font-size: 1.7rem;
+  color: #ffffff;
+}
+
+.contact-us .right {
+  justify-content: flex-end;
+}
+
+/*? Clients */
+.clients {
+  min-height: 500px;
+}
+
+@media (min-width: 768px) {
+  .contact-us img {
+    margin-top: -200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .integrations p {
+    display: none;
+  }
+
+  .contact-us .is-center {
+    display: flex;
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  .contact-us .is-center {
+    justify-content: center;
+  }
 }
