@@ -116,7 +116,7 @@ body {
 .input-contact {
   display: block;
   width: fit-content !important;
-  padding: 0.375rem 0.75rem;
+  padding: 0.375rem 1.5rem;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -275,7 +275,7 @@ header {
 /*? Navbar */
 header nav {
   /* min-height: calc(100% - 48px); */
-  min-height: 72px;
+  min-height: 80px;
   /* z-index: 9000; */
 }
 .navbar {
@@ -293,7 +293,7 @@ header nav {
 }
 
 .navbar .logo {
-  height: 3.5rem;
+  height: 2.5rem;
 }
 
 #navbar ul li a {
@@ -303,10 +303,9 @@ header nav {
 
 /*? Slider */
 
-.splide__slide {
-  background-image: url('./../assets/images/asset-slider.jpg');
-  background-position: center;
-  background-size: cover;
+.splide__slide h4 {
+  color: white;
+  margin-bottom: 4rem;
 }
 
 .splide__pagination__page {
@@ -333,7 +332,7 @@ header nav {
 .container-slide {
   height: 100%;
   width: 100%;
-  background-color: rgba(3, 29, 48, 0.8);
+  background-color: rgba(3, 29, 48, 0.55);
 }
 .container-slide .container {
   height: 100%;
@@ -437,6 +436,8 @@ footer h6 {
 }
 
 .box-links a {
+  display: flex;
+  align-items: center;
   font-size: 1.3rem;
   color: white;
   font-weight: 400;
